@@ -14,7 +14,7 @@
 
                         <h3>{{ $question->body }}</h3>
                         @foreach($question->answers as $answer)
-                        {{ Form::checkbox('answers['. $answer->id .']', $answer->id) }} {{ $answer->body }}
+                        {{ Form::radio('answers['. $answer->id .']', $answer->id) }} {{ $answer->body }}
                         @endforeach
 
                         @endforeach
